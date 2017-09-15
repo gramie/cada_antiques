@@ -1,0 +1,4 @@
+name = CADA
+description = Functions for the CADA website
+core = 7.x
+package = CADA 

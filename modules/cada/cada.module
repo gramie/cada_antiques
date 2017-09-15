@@ -1,0 +1,28 @@
+<?php
+define('CADA_DEALER', 'cada_dealer');
+
+function cada_renderDealer($dealerID, $linkToAntiqueItems = false) {
+  $dealer = user_load($dealerID);
+
+  $wrapper = entity_metadata_wrapper('user', $dealer);  
+  $d = array(
+    'id' => $linkToAntiqueItems ? $dealerID : null,
+    'name' => $wrapper->field_dealer_name->value(),
+    'address' => $wrapper->field_address->value(),
+    'phone' => $wrapper->field_phone->value(),
+    'email' => $dealer->mail,
+    'fax' => $wrapper->field_fax->value(),
+    'web' => $wrapper->field_web->value(),
+    'contact' => $wrapper->field_full_name->value(),
+  );
+  print(theme(CADA_DEALER, array('user' => $d)));
+}
+
+function cada_theme() {
+  return (array(
+    CADA_DEALER => array(
+      'variables' => array('user' => NULL),
+      'template' => 'templates/dealer'
+    ),
+  ));
+}

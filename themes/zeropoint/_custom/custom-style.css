@@ -1,0 +1,629 @@
+/********************/
+/* CUSTOM STYLE CSS */
+/********************/
+/*
+Put your custom css and css overrides in this file. By restricting your css changes to
+custom-style.css, your changes will not be overwritten when upgrading to a new version of this theme.
+
+Steps to customize your theme:
+1. Add your custom css to this file;
+2. Uncomment different examples below and modify data as you wish;
+3. Clear cached data at admin/settings/performance or, if you use Administration Menu module, "Flush all caches".
+	 You can also check "Rebuild theme registry on every page" at /admin/appearance/settings/zeropoint during development;
+4. Don't forget to save a copy of this file with a different name to avoid loosing it after a theme update.
+*/
+
+
+
+/* Erase or comment the lines below to get rid of the image in the right sidebar and the brand image at the bottom */
+#middlecontainer {
+	/*background: transparent url(../images/all/_sidebarimg.png) 99% 99% no-repeat;*/
+}
+#brand {
+	background: url(../images/all/_brand.png) 50% 0 no-repeat;
+	margin: 0 auto;
+	height: 50px;
+}
+
+
+/***********************/
+/* CHANGE DEFAULT FONT */
+/***********************/
+/*
+html, .pure-g [class*="pure-u"] {
+	font-family: Verdana, Helvetica;
+}*/
+
+
+/**********************/
+/* ROUND USER PICTURE */
+/**********************/
+/*
+.user-picture img {
+	border-radius: 100% !important;
+}*/
+
+
+/*************************/
+/* DROP DOWN ADJUSTMENTS */
+/*************************/
+
+/* no dropdown shadows */
+/*
+.pure-menu-children {
+	box-shadow: none;
+}*/
+
+/* big arrows */
+/*
+.pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {
+	content: "\25BC";
+}
+.pure-menu-has-children .pure-menu-has-children > .pure-menu-link:after {
+	content: "\25B6";
+}*/
+
+
+/**************************/
+/* INDIVIDUAL MENU COLORS */
+/**************************/
+/* Uncomment the following lines to have different colors for menu items.
+ * Change the values below accordingly: XXX=menu item number; YYY=color. */
+
+/* Individual menu item */
+/*
+.menu-XXX {
+	background: #YYY;
+}*/
+
+/* First/last menu item */
+/*
+.first.pure-menu-link {
+	background: #YYY;
+}*/
+
+/* Middle menu items */
+/*
+.pure-menu-link {
+	background: #YYY;
+}*/
+
+/* Children color */
+/*
+.pure-menu-children .pure-menu-link {
+	color: #YYY !important;
+	background: YYY;
+}*/
+
+
+/***************************************************/
+/* HIDE some TITLES, READMORE and Developer's link */
+/***************************************************/
+/* Uncomment the first declaration below to hide all titles on the front page
+ * Addapt the second declaration to hide a certain title on the frontpage.
+ * Third one is for no "Read more" on the front page. */
+/*
+.front #main h2.title a {	display: none; }
+.front #main #node-XXX h2.title a {	display: none; }
+.front .node-readmore {	display: none; }
+.by { visibility: hidden; }
+*/
+
+
+/*******************************/
+/* UPDATE ICONS FOR NEW BLOCKS */
+/*******************************/
+/* where ID is the block id */
+
+/*
+#ID .block-icon {
+	background: transparent url(../images/all/icons/blocks/icon_24_48.png) no-repeat;
+}
+*/
+
+
+/*************************/
+/* USER BLOCKS ALIGNMENT */
+/*************************/
+/*
+#section1 .block {
+	min-height: 250px;
+}*/
+
+
+/*************************/
+/* CENTERED BLOCK IMAGES */
+/*************************/
+/*
+.block img {
+	margin: auto;
+}*/
+
+
+/************************/
+/* OTHER SOCIAL NETWORK */
+/***********************/
+/*
+#soclinks .myother {
+	background: transparent url(myother-social-network_32.png) no-repeat scroll center center;
+}*/
+
+
+/***********************/
+/* CHANGE HEADER IMAGE */
+/***********************/
+/* Deactivate the image rotator in theme's settings, put your new image in the _custom folder and uncomment the lines below */
+/*
+.himg #headimg, #headimg {
+	background: #fff url(YOUR_IMAGE.png) no-repeat 100% 100%;
+}*/
+
+/*****************/
+/** Entire site **/
+/*****************/
+h1, h2, h3 {
+  color: #333;
+}
+
+#middlecontainer.pure-g,
+.pure-menu-link,
+#footer{
+  font-family: 'Open Sans';
+}
+
+
+.region-content {
+  padding: 20px;
+}
+
+#main h1.title{
+	position:absolute;
+	top:164px;
+  width: 100%;
+	padding-left: 7em;
+	color:#ffffff;
+	font-weight:bold;
+	background: rgba(3,3,3,0.8);
+}
+
+/*****************/
+/**     Menu    **/
+/*****************/
+#menu li {
+  line-height: 2em;
+}
+
+#menu a.pure-menu-link {
+  /*font-family:sans-serif;*/
+}
+
+#menu .pure-menu-link:hover {
+  background-color: orange;
+}
+
+.pure-menu-link {
+  background-color: #F8CB1B;
+}
+
+.pure-menu-link {
+  color: black !important;
+}
+
+.pure-menu-link.active {
+  background-color: white;
+  color: black !important;
+}
+
+.pure-menu-list {
+  width: 100%;
+  background-color: #F8CB1B;
+  padding-left: 7em;
+  font-size: 150%;
+}
+
+/*******************/
+/** Banner Images **/
+/*******************/
+
+#main .page-banner-img{
+  	margin:0;
+	padding: 0;
+}
+
+#main .page-banner-img p{
+  margin: 0;
+}
+
+#main .page-banner-img img{
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid silver;
+}
+
+#middlecontainer {
+  margin: 0;
+  padding: 0;
+}
+
+#bottom_bg {
+  background-color: #321D1A;
+  padding-top: 0.25em;
+}
+
+#brand {
+  display: none;
+}
+
+/*****************/
+/**  Front Page **/
+/*****************/
+#top-elements, #name-and-slogan {
+	display: none;
+}
+
+#mission {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  padding: 0;
+  margin: 0;
+}
+
+
+#main h2.title {
+  display: none;
+}
+
+
+body.front .field-name-body img {
+  margin-right: 30px;
+  border: 2px solid silver;
+}
+
+body.front .field-name-body p{
+	font-size:110%;
+	line-height:150%;
+}
+
+body.front #block-system-main > .content,
+body.page-about-us #block-system-main > .content, 
+body.page-contact-us #block-system-main > .content
+{
+	margin-left:5%;
+	margin-right:5%;
+}
+
+body.front .field-name-body img{
+	margin-right:100px;
+}
+
+body.front #block-views-quick_views-block .block-title{
+	text-align:center;
+}
+
+/***********************************/
+/** Quick views on the front page **/
+/***********************************/
+#block-views-quick_views-block .block-title {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 200%;
+}
+
+body.front .view-quick-views .view-content,
+div.view-category-listing .view-content,
+.view-all-categories .view-content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+body.front .view-quick-views .views-row {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+body.front .view-quick-views img {
+  border: 2px solid gray;
+}
+
+body.front .view-quick-views .views-field-name {
+  background-color: gold;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 110%;
+  text-transform: uppercase;
+  font-weight: bold;
+  width:164px;
+}
+
+body.front .view-quick-views .views-field-name a {
+  color: #333;
+}
+
+/** Take out images on left and right sides of the page **/
+#top_left, #body_left {
+	background: transparent;
+}
+
+#top_right, #body_right {
+	background: transparent;
+	padding: 0;
+}
+
+/*********************/
+/** Categories Page **/
+/*********************/
+
+div.view-category-listing .views-row {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 350px;
+  border: 1px solid silver;
+  padding: 4px;
+}
+
+#edit-field-category-tid-wrapper > label {
+  font-weight: bold;
+  font-size: 140%;
+}
+
+#edit-field-category-tid li:first-child{display:none;}
+
+div.view-category-listing .views-exposed-form {
+  float: left;
+}
+
+div.view-category-listing .view-content {
+  margin-left: 12em;
+}
+
+/*applies to all listings */
+.views-field-field-category,
+.view-category-listing .views-field-title{
+	font-size:150%;
+	margin-bottom: .5em;
+  height: 2em;
+  line-height: 1.1em; 
+  text-align: center;
+  margin-top: 8px;
+}
+
+.views-field-field-category a,
+.view-category-listing .views-field-title a{
+	color:#333;
+}
+
+.views-field-field-dealer-name{
+	margin-top:8px;
+	font-size:120%;
+  text-align: center;
+}
+
+.views-field-field-dealer-name .field-content{
+	margin-top:5px;
+}
+
+.views-field-field-dealer-name a{
+	color:black;
+	font-size:90%;
+}
+
+/*****************/
+/** Single Item **/
+/*****************/
+#field-slideshow-1-pager img {
+  border: 2px solid #6D6E72;
+}
+
+body.node-type-antique-item .field-name-field-photos {
+  float: left;
+  width: 440px;
+}
+
+body.node-type-antique-item .node-antique-item .content {
+  font-size: 150%;
+  line-height: 1.5em;
+}
+
+.node-antique-item .field {
+  width: 350px;
+  margin-right: 20px;
+  float: left;
+}
+
+div#field-slideshow-1-carousel-wrapper > a {
+  display: none;
+}
+
+/******************/
+/** Dealers Page **/
+/******************/
+#views-exposed-form-dealers-page {
+	width: 15em;
+	float: left;
+}
+
+div#edit-field-region-tid-wrapper ul.bef-tree > li {
+  margin-bottom: 10px;
+  line-height: 1.8em;
+}
+
+div#edit-field-region-tid-wrapper ul.bef-tree > li > div > input {
+  display: none;
+}
+
+div#edit-field-region-tid-wrapper ul.bef-tree > li:first-child{display:none;}
+
+/* MS 22A17 Remove list item*/
+div#edit-field-region-tid-wrapper ul {
+  list-style-type:none;
+}
+
+#pid-dealers .view-content {
+	margin-left: 20em;
+}
+
+.view-dealers .views-row {
+  margin-bottom: 2em;
+}
+
+#pid-dealers .view-content .views-field-field-dealer-name {
+	font-size: 130%;
+	font-weight: bold;
+	color:black;
+}
+
+
+/*entered Fri Sept 1 - MS */
+
+#pid-dealers .views-content a{
+	color:saddlebrown;
+}
+
+
+.view-dealers .views-exposed-form{
+	border-right:solid #ccc thin;
+}
+
+.view-dealers .views-exposed-form label:first-child {
+	font-size: 130%;
+	font-weight: bold;
+	color:black;
+}
+
+
+
+#pid-dealers .views-field {
+	line-height: 1.5em;
+}
+	
+
+#pid-dealers .views-row .views-label {
+	display: block;
+	float: left;
+	width: 10em;
+	font-weight: bold;
+}
+
+.view-dealers .view-empty p{
+	font-size: 2em;
+    text-align: center;
+}
+
+/* end add Sept 1 */
+
+/********************************/
+/** Single Dealer's items page **/
+/********************************/
+body.page-dealer-antiques h1.title {
+  display: none;
+}
+
+.view-dealer-antiques h3 {
+  background-color: #ddd;
+  padding: 8px;
+  margin-bottom: 14px;
+}
+
+.view-dealer-antiques .grouping-box {
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.view-dealer-antiques .views-row {
+  margin-bottom: 10px;
+}
+
+.view-dealer-antiques .views-row .views-field-title {
+  text-align: center;
+  font-size: 130%;
+  margin-top: 10px;
+}
+
+/*added Sept 3 - MS */
+.dealer-details{
+	margin-left:5em;
+}
+
+.dealer-details .dealer-name{
+	font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.dealer-details .contact{
+	font-size: 1.3 em;
+	color:black;
+	line-height:1.3 em;
+}
+
+/*end add Sept 3 */
+
+/*******************/
+/** About Us Page **/
+/*******************/
+#about-us-content {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+#about-us-content dd {
+  -webkit-margin-start: 0;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/** Make the radio button trees look like hierarchical lists **/
+.bef-select-as-radios ul {
+  list-style: none;
+}
+
+.bef-select-as-radios li input {
+  display: none;
+}
+
+.bef-select-as-radios li input:checked+label {
+  background-color: green;
+  color: white;
+}
+
+tr, td {
+  border-bottom: 3px solid #ccc;
+}
+
+tbody {
+  border-top: 3px solid #ccc;
+}
+
+/***********************/
+/* How-to Page         */
+/***********************/
+#pid-how-upload-antique li {
+  border-bottom: 2px solid silver;
+}
+
+#pid-how-upload-antique figure img {
+  border: 1px solid gray;
+  padding: 4px;
+}
+
+/***********************/
+/* CHANGEs for MOBILES */
+/***********************/
+
+@media screen and (max-width: 48em) {
+
+/* HEADER IMAGE */
+/* Comment or erase the lines below and images rotator will work on mobiles too.
+	 You can also change the image with "mobi-sq" or use your own. */
+	.himg #headimg, #headimg {
+		background: #fff url(../images/all/mobi-dot.png) repeat;
+	}
+}
