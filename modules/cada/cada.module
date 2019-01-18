@@ -1,10 +1,16 @@
 <?php
 define('CADA_DEALER', 'cada_dealer');
 
+/**
+ * Display the dealer information
+ *
+ * @param integer $dealerID
+ * @param bool $linkToAntiqueItems
+ */
 function cada_renderDealer($dealerID, $linkToAntiqueItems = false) {
   $dealer = user_load($dealerID);
 
-  $wrapper = entity_metadata_wrapper('user', $dealer);  
+  $wrapper = entity_metadata_wrapper('user', $dealer);
   $d = array(
     'id' => $linkToAntiqueItems ? $dealerID : null,
     'name' => $wrapper->field_dealer_name->value(),
@@ -18,6 +24,11 @@ function cada_renderDealer($dealerID, $linkToAntiqueItems = false) {
   print(theme(CADA_DEALER, array('user' => $d)));
 }
 
+/**
+ * Implementation of hook_theme()
+ *
+ * @return array
+ */
 function cada_theme() {
   return (array(
     CADA_DEALER => array(
