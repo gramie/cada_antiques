@@ -45,9 +45,6 @@ function cada_renderDealer($dealerID, $linkToAntiqueItems = false) {
  */
 function cada_theme() {
   return (array(
-    CADA_DEALER => array(
-      'variables' => array('user' => NULL),
-      'template' => 'templates/dealer'
-    ),
+    CADA_DEALER => array('variables' => array('user' => NULL), 'template' => 'templates/dealer'),
   ));
 }
