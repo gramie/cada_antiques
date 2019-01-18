@@ -22,6 +22,7 @@ function cada_renderDealer($dealerID, $linkToAntiqueItems = false) {
   $dealer = user_load($dealerID);
 
   $wrapper = entity_metadata_wrapper('user', $dealer);
+  // Create an array with all the user's contact information
   $d = array(
     'id' => $linkToAntiqueItems ? $dealerID : null,
     'name' => $wrapper->field_dealer_name->value(),
