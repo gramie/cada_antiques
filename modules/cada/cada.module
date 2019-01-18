@@ -2,10 +2,8 @@
 /**
  * cada.module
  *
- * CADA customization
- *
- * @category   Drupal module
- * @package    CADA
+ * Customizations for the CADA sales website
+ * 
  * @author     Graham Stratford
  * @copyright  2019 Graham Stratford
  * @license    http://www.php.net/license/3_0.txt  PHP License 3.0
