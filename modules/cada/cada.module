@@ -1,16 +1,4 @@
 <?php
-/**
- * cada.module
- *
- * CADA customization
- *
- * @category   Drupal module
- * @package    CADA
- * @author     Graham Stratford
- * @copyright  2019 Graham Stratford
- * @license    http://www.php.net/license/3_0.txt  PHP License 3.0
- * @version    CVS: $Id:$
- */
 
 define('CADA_DEALER', 'cada_dealer');
 
