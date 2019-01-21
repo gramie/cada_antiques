@@ -1,4 +1,4 @@
-<?php //dpm($variables);
+<?php
 $d = $variables['user'];
 ?>
 <div class="dealer-details">
@@ -13,10 +13,9 @@ $d = $variables['user'];
   <?php if ($d['web']) { ?>
     <div class="web"><?php print(l($d['web'], $d['web'])); ?></div>
   <?php } ?>
-  <?php 
+  <?php
     if ($d['id']) {
       print(l('See all antiques', 'dealer-antiques/' . $d['id']));
-    } 
+    }
   ?>
-  
-  
+
